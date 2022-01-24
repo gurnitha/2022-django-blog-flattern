@@ -169,7 +169,7 @@
         <div class="row">
           <div class="span4">
             <div class="logo">
-              <a href="index.html"><img src="{% static 'img/logo.png' %}" alt="" class="logo" /></a>
+              <a href="/"><img src="{% static 'img/logo.png' %}" alt="" class="logo" /></a>
               <h1>Flat and trendy bootstrap template</h1>
             </div>
           </div>
@@ -179,10 +179,10 @@
                 <nav>
                   <ul class="nav topnav">
                     <li class="active">
-                      <a href="index.html">Home </a>
+                      <a href="{% url 'portfolio:homepage' %}">Home </a>
                     </li>
                     <li class="">
-                      <a href="#">Portfolio</a>
+                      <a href="{% url 'portfolio:portfolio' %}">Portfolio</a>
                     </li>
                     <li class="">
                       <a href="#">Blog</a>

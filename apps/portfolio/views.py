@@ -9,3 +9,7 @@ from django.shortcuts import render
 # Homepage view
 def index(request):
 	return render(request, 'portfolio/index.html')
+
+# Porpolio view
+def portfolio(request):
+	return render(request, 'portfolio/portfolio.html')

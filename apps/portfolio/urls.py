@@ -10,5 +10,6 @@ app_name = 'portfolio'
 
 urlpatterns = [
     path('', index, name='homepage'),
+    path('portfolio', portfolio, name='portfolio'),
 ]
 

@@ -89,7 +89,13 @@ This is my exercise based on the template I downloaded from https://www.free-css
         modified:   templates/base.html
 
 
+#### 5. Setting Views, Templates, and Urls for portfolio page
 
+        modified:   README.md
+        new file:   apps/portfolio/templates/portfolio/portfolio.html
+        modified:   apps/portfolio/urls.py
+        modified:   apps/portfolio/views.py
+        modified:   templates/base.html
 
 
 
