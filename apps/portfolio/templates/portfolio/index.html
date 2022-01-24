@@ -140,66 +140,13 @@
           <div class="span12">
             <h4>Very satisfied <strong>clients</strong></h4>
             <ul id="mycarousel" class="jcarousel-skin-tango recent-jcarousel clients">
+              {% for cli in clients %}
               <li>
                 <a href="#">
-          <img src="{% static 'img/dummies/clients/client1.png' %}" class="client-logo" alt="" />
-          </a>
+                  <img src="{{ cli.client_company_logo.url }}" class="client-logo" alt="" />
+                </a>
               </li>
-              <li>
-                <a href="#">
-          <img src="{% static 'img/dummies/clients/client2.png' %}" class="client-logo" alt="" />
-          </a>
-              </li>
-              <li>
-                <a href="#">
-          <img src="{% static 'img/dummies/clients/client3.png' %}" class="client-logo" alt="" />
-          </a>
-              </li>
-              <li>
-                <a href="#">
-          <img src="{% static 'img/dummies/clients/client4.png' %}" class="client-logo" alt="" />
-          </a>
-              </li>
-              <li>
-                <a href="#">
-          <img src="{% static 'img/dummies/clients/client5.png' %}" class="client-logo" alt="" />
-          </a>
-              </li>
-              <li>
-                <a href="#">
-          <img src="{% static 'img/dummies/clients/client6.png' %}" class="client-logo" alt="" />
-          </a>
-              </li>
-              <li>
-                <a href="#">
-          <img src="{% static 'img/dummies/clients/client1.png' %}" class="client-logo" alt="" />
-          </a>
-              </li>
-              <li>
-                <a href="#">
-          <img src="{% static 'img/dummies/clients/client2.png' %}" class="client-logo" alt="" />
-          </a>
-              </li>
-              <li>
-                <a href="#">
-          <img src="{% static 'img/dummies/clients/client3.png' %}" class="client-logo" alt="" />
-          </a>
-              </li>
-              <li>
-                <a href="#">
-          <img src="{% static 'img/dummies/clients/client4.png' %}" class="client-logo" alt="" />
-          </a>
-              </li>
-              <li>
-                <a href="#">
-          <img src="{% static 'img/dummies/clients/client5.png' %}" class="client-logo" alt="" />
-          </a>
-              </li>
-              <li>
-                <a href="#">
-          <img src="{% static 'img/dummies/clients/client6.png' %}" class="client-logo" alt="" />
-          </a>
-              </li>
+              {% endfor %}
             </ul>
           </div>
         </div>

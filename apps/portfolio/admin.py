@@ -4,7 +4,7 @@
 from django.contrib import admin
 
 # Locals
-from apps.portfolio.models import Slider, Service, Gallery  
+from apps.portfolio.models import Slider, Service, Gallery, Client  
 
 # Register your models here.
 
@@ -12,3 +12,4 @@ from apps.portfolio.models import Slider, Service, Gallery
 admin.site.register(Slider)
 admin.site.register(Service)
 admin.site.register(Gallery)
+admin.site.register(Client)

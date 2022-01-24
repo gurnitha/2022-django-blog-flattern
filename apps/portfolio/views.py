@@ -4,7 +4,7 @@
 from django.shortcuts import render
 
 # Locals
-from apps.portfolio.models import Slider, Service, Gallery
+from apps.portfolio.models import Slider, Service, Gallery, Client
 
 # Create your views here.
 
@@ -14,10 +14,12 @@ def index(request):
 	sliders = Slider.objects.order_by('-id')[0:3]
 	services = Service.objects.order_by('id')[0:4]
 	galleries = Gallery.objects.order_by('-id')[0:8]
+	clients = Client.objects.order_by('-id')[0:12]
 	context = {
 		'sliders':sliders, 
 		'services':services,
-		'galleries':galleries
+		'galleries':galleries,
+		'clients':clients
 	}
 	return render(request, 'portfolio/index.html', context)
 

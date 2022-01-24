@@ -56,3 +56,18 @@ class Gallery(models.Model):
 
 	def __str__(self):
 		return self.gallery_image_title
+
+
+# Model: Client
+class Client(models.Model):
+	client_company_logo = models.ImageField(upload_to='client/%Y/%m/%d/', blank=False)
+	client_company_name = models.CharField(max_length=150)  
+	created = models.DateTimeField(auto_now_add=True)
+	
+	class Meta:
+		verbose_name = 'Client'
+		verbose_name_plural = 'Clients'
+
+
+	def __str__(self):
+		return self.client_company_name

@@ -179,6 +179,20 @@ This is my exercise based on the template I downloaded from https://www.free-css
         new file:   media/gallery/2022/01/25/image-08.jpg
 
 
+### 4. CLIENTS
+--------------
+
+#### 4.1 Clients: Create Client model, Load data on View and display them on the page
+
+        modified:   README.md
+        modified:   apps/portfolio/admin.py
+        new file:   apps/portfolio/migrations/0006_client.py
+        modified:   apps/portfolio/models.py
+        modified:   apps/portfolio/templates/portfolio/index.html
+        modified:   apps/portfolio/views.py
+        new file:   media/client/2022/01/25/client1.png
+        ...
+        new file:   media/client/2022/01/25/client6_7jYDxtb.png
 
 
 
