@@ -4,7 +4,7 @@
 from django.shortcuts import render
 
 # Locals
-from apps.portfolio.models import Slider, Service
+from apps.portfolio.models import Slider, Service, Gallery
 
 # Create your views here.
 
@@ -13,7 +13,12 @@ from apps.portfolio.models import Slider, Service
 def index(request):
 	sliders = Slider.objects.order_by('-id')[0:3]
 	services = Service.objects.order_by('id')[0:4]
-	context = {'sliders':sliders, 'services':services}
+	galleries = Gallery.objects.order_by('-id')[0:8]
+	context = {
+		'sliders':sliders, 
+		'services':services,
+		'galleries':galleries
+	}
 	return render(request, 'portfolio/index.html', context)
 
 # Porpolio view

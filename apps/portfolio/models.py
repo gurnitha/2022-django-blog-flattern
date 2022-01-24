@@ -39,3 +39,20 @@ class Service(models.Model):
 
 	def __str__(self):
 		return self.service_title
+
+
+# Model: Services
+class Gallery(models.Model):
+	gallery_image_full = models.ImageField(upload_to='gallery/%Y/%m/%d/', blank=False)
+	gallery_thumbnail = models.ImageField(upload_to='gallery/%Y/%m/%d/', blank=False)
+	gallery_image_title = models.CharField(max_length=200) 
+	gallery_image_description = models.CharField(max_length=200) 
+	created = models.DateTimeField(auto_now_add=True)
+	
+	class Meta:
+		verbose_name = 'Gallery'
+		verbose_name_plural = 'Galleries'
+
+
+	def __str__(self):
+		return self.gallery_image_title

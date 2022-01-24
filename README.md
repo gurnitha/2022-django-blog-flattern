@@ -163,6 +163,21 @@ This is my exercise based on the template I downloaded from https://www.free-css
         modified:   apps/portfolio/views.py
 
 
+### 3. IMAGES GALLERY
+---------------------
+
+#### 3.1 Images Gallery: Create Gallery model, Load data on View and display them to the page
+
+       modified:   README.md
+        modified:   apps/portfolio/admin.py
+        new file:   apps/portfolio/migrations/0005_gallery.py
+        modified:   apps/portfolio/models.py
+        modified:   apps/portfolio/templates/portfolio/index.html
+        modified:   apps/portfolio/views.py
+        new file:   media/gallery/2022/01/25/image-01-full.jpg
+        ...
+        new file:   media/gallery/2022/01/25/image-08.jpg
+
 
 
 
