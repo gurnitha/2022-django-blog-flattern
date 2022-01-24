@@ -83,6 +83,11 @@ This is my exercise based on the template I downloaded from https://www.free-css
         new file:   templates/base.html
 
 
+#### 4. Removing some menu items
+
+        modified:   README.md
+        modified:   templates/base.html
+
 
 
 
