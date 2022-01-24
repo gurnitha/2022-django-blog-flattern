@@ -23,3 +23,19 @@ class Slider(models.Model):
 
 	def __str__(self):
 		return self.slider_title1
+
+
+# Model: Services
+class Service(models.Model):
+	service_icon = models.CharField(max_length=50)
+	service_title = models.CharField(max_length=150) 
+	service_description = models.CharField(max_length=200) 
+	created = models.DateTimeField(auto_now_add=True)
+	
+	class Meta:
+		verbose_name = 'Service'
+		verbose_name_plural = 'Services'
+
+
+	def __str__(self):
+		return self.service_title

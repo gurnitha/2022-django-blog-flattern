@@ -150,6 +150,19 @@ This is my exercise based on the template I downloaded from https://www.free-css
         new file:   media/sliders/2022/01/24/bg-3.jpg
 
 
+### 2. COMPANY'S SERVICES
+-------------------------
+
+#### 2.1 Company's services: Create Service model, Load data on View and display data on the pada
+
+        modified:   README.md
+        modified:   apps/portfolio/admin.py
+        new file:   apps/portfolio/migrations/0004_service.py
+        modified:   apps/portfolio/models.py
+        modified:   apps/portfolio/templates/portfolio/index.html
+        modified:   apps/portfolio/views.py
+
+
 
 
 
