@@ -76,6 +76,12 @@ This is my exercise based on the template I downloaded from https://www.free-css
         modified:   config/urls.py
 
 
+#### 3. Extending base template
+
+        modified:   README.md
+        modified:   apps/portfolio/templates/portfolio/index.html
+        new file:   templates/base.html
+
 
 
 
