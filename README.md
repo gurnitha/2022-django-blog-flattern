@@ -128,6 +128,27 @@ This is my exercise based on the template I downloaded from https://www.free-css
 
 
 
+### PART 2: WORKING ON FOR FULLY DYNAMIC PAGES IN DJANGO
+--------------------------------------------------------
+
+
+### 1. SLIDERS
+--------------
+
+#### 1.1 Main sliders: Create Slider model, Load data on View and Display data on the slider
+
+
+        modified:   README.md
+        modified:   apps/portfolio/admin.py
+        new file:   apps/portfolio/migrations/0001_initial.py
+        new file:   apps/portfolio/migrations/0002_auto_20220124_2118.py
+        new file:   apps/portfolio/migrations/0003_auto_20220124_2124.py
+        modified:   apps/portfolio/models.py
+        modified:   apps/portfolio/templates/portfolio/index.html
+        modified:   apps/portfolio/views.py
+        ...
+        new file:   media/sliders/2022/01/24/bg-3.jpg
+
 
 
 
