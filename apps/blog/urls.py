@@ -10,5 +10,6 @@ app_name = 'blog'
 
 urlpatterns = [
     path('posts/', posts, name='posts'),
+    path('post/1/', single, name='single'),
 ]
 

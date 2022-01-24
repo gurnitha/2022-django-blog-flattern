@@ -108,6 +108,14 @@ This is my exercise based on the template I downloaded from https://www.free-css
         modified:   templates/base.html
 
 
+#### 7. Setting Views, Templates, and Urls for single post page
+
+        modified:   README.md
+        modified:   apps/blog/templates/blog/posts.html
+        new file:   apps/blog/templates/blog/single.html
+        modified:   apps/blog/urls.py
+        modified:   apps/blog/views.py
+
 
 
 
