@@ -12,6 +12,9 @@ urlpatterns = [
     # Portfolio
     path('', include('apps.portfolio.urls', namespace='portfolio')),
 
+    # Blog
+    path('', include('apps.blog.urls', namespace='blog')),
+
     # Admin
     path('admin/', admin.site.urls),
 ]

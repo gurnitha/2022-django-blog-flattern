@@ -98,7 +98,14 @@ This is my exercise based on the template I downloaded from https://www.free-css
         modified:   templates/base.html
 
 
+#### 6. Setting Views, Templates, and Urls for posts page
 
+        modified:   README.md
+        new file:   apps/blog/templates/blog/posts.html
+        new file:   apps/blog/urls.py
+        modified:   apps/blog/views.py
+        modified:   config/urls.py
+        modified:   templates/base.html
 
 
 
