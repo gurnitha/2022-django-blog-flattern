@@ -2,6 +2,11 @@
 This is my exercise based on the template I downloaded from https://www.free-css.com/
 
 
+
+### PART 1: SETTING UP FULLY STATIC PAGES IN DJANGO
+---------------------------------------------------
+
+
 #### 1. Create django project, blog app and portfolio app
 
         STEPS:
@@ -115,6 +120,12 @@ This is my exercise based on the template I downloaded from https://www.free-css
         new file:   apps/blog/templates/blog/single.html
         modified:   apps/blog/urls.py
         modified:   apps/blog/views.py
+
+
+#### 8. House keeping: Modified README.md file
+
+        modified:   README.md
+
 
 
 
