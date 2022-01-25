@@ -41,12 +41,30 @@ class Service(models.Model):
 		return self.service_title
 
 
+# Model: Galery Category
+class Category(models.Model):
+	category_name = models.CharField(max_length=50, blank=True, null=True)
+	category_class_name = models.CharField(max_length=50, blank=True, null=True)
+
+	class Meta:
+		verbose_name = 'Category'
+		verbose_name_plural = 'Categories'
+
+
+	def __str__(self):
+		return self.category_name
+
 # Model: Services
 class Gallery(models.Model):
+	category = models.ForeignKey(Category, on_delete=models.CASCADE, blank=True, null=True)
 	gallery_image_full = models.ImageField(upload_to='gallery/%Y/%m/%d/', blank=False)
 	gallery_thumbnail = models.ImageField(upload_to='gallery/%Y/%m/%d/', blank=False)
 	gallery_image_title = models.CharField(max_length=200) 
 	gallery_image_description = models.CharField(max_length=200) 
+	is_galery_data_type_web = models.BooleanField(blank=True, null=True)
+	is_galery_data_type_icon = models.BooleanField(blank=True, null=True)
+	is_galery_data_type_graphic = models.BooleanField(blank=True, null=True)
+	is_galery_data_type_webdev = models.BooleanField(blank=True, null=True)
 	created = models.DateTimeField(auto_now_add=True)
 	
 	class Meta:
@@ -71,3 +89,14 @@ class Client(models.Model):
 
 	def __str__(self):
 		return self.client_company_name
+
+
+# # Model: Portfolio
+# class Portfolio(models.Model):
+# 	portfolio_name = models.CharField(max_length=150)
+# 	_image_full = models.ImageField(upload_to='gallery/%Y/%m/%d/', blank=False)
+# 	_thumbnail = models.ImageField(upload_to='gallery/%Y/%m/%d/', blank=False)
+# 	_image_title = models.CharField(max_length=200) 
+# 	_image_description = models.CharField(max_length=200) 
+# 	created = models.DateTimeField(auto_now_add=True)
+# 	

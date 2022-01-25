@@ -195,6 +195,24 @@ This is my exercise based on the template I downloaded from https://www.free-css
         new file:   media/client/2022/01/25/client6_7jYDxtb.png
 
 
+### 5. GALLERY PORTFOLIO
+------------------------
+
+#### 5.1 Gallery portfolio: Create Category model, modified Gallery model, load and display on portfolio page
+
+        modified:   README.md
+        modified:   apps/portfolio/admin.py
+        new file:   apps/portfolio/migrations/0007_auto_20220125_0828.py
+        new file:   apps/portfolio/migrations/0008_auto_20220125_0852.py
+        new file:   apps/portfolio/migrations/0009_auto_20220125_0856.py
+        new file:   apps/portfolio/migrations/0010_auto_20220125_1005.py
+        new file:   apps/portfolio/migrations/0011_gallery_is_galery_data_type_webdev.py
+        modified:   apps/portfolio/models.py
+        modified:   apps/portfolio/templates/portfolio/portfolio.html
+        modified:   apps/portfolio/views.py
+        new file:   media/gallery/2022/01/25/image-01-full_FpguyQp.jpg
+        new file:   media/gallery/2022/01/25/image-01_gL1gxVN.jpg
+
 
 
 
