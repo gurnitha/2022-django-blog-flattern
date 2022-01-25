@@ -214,6 +214,14 @@ This is my exercise based on the template I downloaded from https://www.free-css
         new file:   media/gallery/2022/01/25/image-01_gL1gxVN.jpg
 
 
+#### 5.2 Gallery portfolio: Modified point 5.1 for DRY principle
+
+        modified:   README.md
+        new file:   apps/portfolio/migrations/0012_auto_20220125_1042.py
+        modified:   apps/portfolio/models.py
+        modified:   apps/portfolio/templates/portfolio/portfolio.html
+        modified:   apps/portfolio/views.py
+
 
 
 

@@ -56,15 +56,24 @@ class Category(models.Model):
 
 # Model: Services
 class Gallery(models.Model):
+
+	DATA_TYPE_CHOICES = [
+		('webdesign', 'webdesign'),
+		('webdev', 'webdev'),
+		('icon', 'icon'),
+		('graphic', 'graphic'),
+	]
+
 	category = models.ForeignKey(Category, on_delete=models.CASCADE, blank=True, null=True)
 	gallery_image_full = models.ImageField(upload_to='gallery/%Y/%m/%d/', blank=False)
 	gallery_thumbnail = models.ImageField(upload_to='gallery/%Y/%m/%d/', blank=False)
 	gallery_image_title = models.CharField(max_length=200) 
 	gallery_image_description = models.CharField(max_length=200) 
-	is_galery_data_type_web = models.BooleanField(blank=True, null=True)
-	is_galery_data_type_icon = models.BooleanField(blank=True, null=True)
-	is_galery_data_type_graphic = models.BooleanField(blank=True, null=True)
-	is_galery_data_type_webdev = models.BooleanField(blank=True, null=True)
+	gallery_data_type = models.CharField(max_length=30, choices=DATA_TYPE_CHOICES, default='webdesign')
+	# is_galery_data_type_web = models.BooleanField(blank=True, null=True)
+	# is_galery_data_type_icon = models.BooleanField(blank=True, null=True)
+	# is_galery_data_type_graphic = models.BooleanField(blank=True, null=True)
+	# is_galery_data_type_webdev = models.BooleanField(blank=True, null=True)
 	created = models.DateTimeField(auto_now_add=True)
 	
 	class Meta:
